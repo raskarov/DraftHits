@@ -2,7 +2,6 @@
 using System.Linq;
 
 using DraftHits.Data.Entities;
-using DraftHits.Data.Exceptions;
 
 namespace DraftHits.Data.Repo.Impl
 {

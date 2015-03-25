@@ -20,6 +20,5 @@ C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Core\bin\Debug\Sys
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Core\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Core\obj\Debug\DraftHits.Core.dll
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Core\obj\Debug\DraftHits.Core.pdb
-C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Core\obj\Debug\DraftHits.Core.csprojResolveAssemblyReference.cache
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Core\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Core\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml

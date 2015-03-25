@@ -9,7 +9,6 @@ C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\bin\Debug\Mic
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\bin\Debug\Microsoft.Practices.Unity.dll
-C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\bin\Debug\System.Linq.Dynamic.dll
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\bin\Debug\DraftHits.Core.pdb
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\bin\Debug\EntityFramework.xml
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\bin\Debug\EntityFramework.SqlServer.xml

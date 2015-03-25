@@ -37,7 +37,6 @@ C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Website\bin\System
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Website\bin\System.Web.WebPages.dll
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Website\bin\System.Web.WebPages.Razor.dll
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Website\bin\WebGrease.dll
-C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Website\bin\System.Linq.Dynamic.dll
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Website\bin\DraftHits.Core.pdb
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Website\bin\DraftHits.Data.pdb
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Website\bin\EntityFramework.xml

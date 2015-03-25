@@ -94,11 +94,6 @@
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\CustomerTransaction.cs" />
     <Compile Include="Enums\CustomerTransactionType.cs" />
-    <Compile Include="Exceptions\ChildEntityRelationException.cs" />
-    <Compile Include="Exceptions\InvalidRangeException.cs" />
-    <Compile Include="Exceptions\ParamsEntityException.cs" />
-    <Compile Include="Exceptions\DuplicateEntityException.cs" />
-    <Compile Include="Exceptions\NotFoundEntityException.cs" />
     <Compile Include="DraftHitsContext.cs" />
     <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Migrations\201503250809163_InitialDatabase.cs" />
@@ -121,6 +116,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Exceptions\" />
     <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
