@@ -1,0 +1,34 @@
+
+
+.themed-color-default {
+    color: #252d2f !important;
+}
+
+.themed-background-default {
+    background-color: #252d2f !important;
+}
+
+.themed-color-dark-default {
+    color: #454e59 !important;
+}
+
+.themed-background-dark-default {
+    background-color: #454e59 !important;
+}
+
+
+.themed-color-passion {
+    color: #de4b39 !important;
+}
+
+.themed-background-passion {
+    background-color: #de4b39 !important;
+}
+
+.themed-color-dark-passion {
+    color: #252d2f !important;
+}
+
+.themed-background-dark-passion {
+    background-color: #252d2f !important;
+}
