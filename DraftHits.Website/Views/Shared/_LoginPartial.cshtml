@@ -1,0 +1,67 @@
+﻿@if (Request.IsAuthenticated)
+{
+    var sessionUser = Session.GetUser();
+    var currentUserID = sessionUser.CustomerId;
+    var isLockedOut = sessionUser.AccountLocked;
+    var currentBalance = String.Format("{0:C}", sessionUser.Balance); 
+    var DHRP = sessionUser.DHRP;
+    var currentPendingBonus = String.Format("{0:C}", sessionUser.PendingBonus);
+    var aliasName = sessionUser.AliasName;
+    
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {    
+        @Html.AntiForgeryToken()
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
+                    <div class="avatar avatar-inline" style="background-image: url(/Content/img/member_defaultpic.gif);"></div>
+                    @aliasName - @isLockedOut <i class="fa fa-chevron-down "></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="dropdown-header">
+                        <strong>Balance:</strong>&nbsp;<span class="pull-right"> @currentBalance</span><br />
+                        <strong>Pending Bonus:</strong>&nbsp;<span class="pull-right"> @currentPendingBonus </span><br />
+                        <strong>DHRP:</strong>&nbsp;<span class="pull-right"> @DHRP </span><br />
+                    </li>
+                    <li>
+                        <a href="#">
+                            My Account
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/AddFunds">
+                            Add Funds
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                           Ship Items <span class="badge">9</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Withdraw
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Transaction History
+                        </a>
+                    </li>
+                    <li class="divider">
+                    <li>
+                        <a href="javascript:document.getElementById('logoutForm').submit()">Log Off</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    }
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Join", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}
