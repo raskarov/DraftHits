@@ -62,15 +62,14 @@ namespace DraftHits.Website.Controllers
                 {
                     var repoCustomer = uow.GetRepo<ICustomerRepo>();
                     var repoCustomerTransaction = uow.GetRepo<ICustomerTransactionRepo>();
+                    var repoCustomerPaymentsLog = uow.GetRepo<ICustomerPaymentsLogRepo>();
 
                     var customer = repoCustomer.GetByUserId(User.Id);
-                        
                     customer.Balance += 10;
 
                     customer = repoCustomer.Update(customer);
 
                     var customerTransaction = new CustomerTransaction();
-
                     customerTransaction.CustomerId = customer.Id;
                     customerTransaction.Credit = 10;
                     customerTransaction.CustomerTransactionType = CustomerTransactionType.EntryFee;
@@ -78,6 +77,19 @@ namespace DraftHits.Website.Controllers
                     customerTransaction.DateTransaction = DateTime.Now;
 
                     customerTransaction = repoCustomerTransaction.Add(customerTransaction);
+
+                    uow.Commit();
+
+                    var customerPaymentsLog = new CustomerPaymentsLog();
+                    customerPaymentsLog.CustomerId = customer.Id;
+                    customerPaymentsLog.CustomerTransactionId = customerTransaction.Id;
+                    customerPaymentsLog.PaymentAmount = 257;
+                    customerPaymentsLog.PaymentProvider = "provider";
+                    customerPaymentsLog.PaymentTransactionId = "x4gfds553";
+                    customerPaymentsLog.CustomerIPAddress = "10.0.83.32";
+                    customerPaymentsLog.DatePayment = DateTime.Now;
+
+                    customerPaymentsLog = repoCustomerPaymentsLog.Add(customerPaymentsLog);
 
                     uow.Commit();
                 }

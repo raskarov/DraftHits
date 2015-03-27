@@ -22,5 +22,7 @@ namespace DraftHits.Data.Entities
         public Int64 CustomerId { get; set; }
 
         public virtual Customer Customer { get; set; }
+
+        public virtual ICollection<CustomerPaymentsLog> CustomerPaymentsLogs { get; set; }
     }
 }

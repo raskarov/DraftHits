@@ -88,10 +88,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cofigs\ApplicationUserConfig.cs" />
+    <Compile Include="Cofigs\CustomerPaymentsLogConfig.cs" />
     <Compile Include="Cofigs\CustomerTransactionConfig.cs" />
     <Compile Include="Cofigs\CustomerConfig.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
     <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\CustomerPaymentsLog.cs" />
     <Compile Include="Entities\CustomerTransaction.cs" />
     <Compile Include="Enums\CustomerTransactionType.cs" />
     <Compile Include="DraftHitsContext.cs" />
@@ -100,9 +102,15 @@
     <Compile Include="Migrations\201503250809163_InitialDatabase.Designer.cs">
       <DependentUpon>201503250809163_InitialDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503270533536_27_03_2015_00.cs" />
+    <Compile Include="Migrations\201503270533536_27_03_2015_00.Designer.cs">
+      <DependentUpon>201503270533536_27_03_2015_00.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repo\ICustomerPaymentsLogRepo.cs" />
     <Compile Include="Repo\ICustomerTransactionRepo.cs" />
+    <Compile Include="Repo\Impl\CustomerPaymentsLogRepo.cs" />
     <Compile Include="Repo\Impl\CustomerTransactionRepo.cs" />
     <Compile Include="Repo\Impl\CustomerRepo.cs" />
     <Compile Include="Repo\ICustomerRepo.cs" />
@@ -128,6 +136,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201503250809163_InitialDatabase.resx">
       <DependentUpon>201503250809163_InitialDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503270533536_27_03_2015_00.resx">
+      <DependentUpon>201503270533536_27_03_2015_00.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -28,5 +28,7 @@ namespace DraftHits.Data.Entities
         public virtual ApplicationUser User { get; set; }
 
         public virtual ICollection<CustomerTransaction> CustomerTransactions { get; set; }
+
+        public virtual ICollection<CustomerPaymentsLog> CustomerPaymentsLogs { get; set; }
     }
 }

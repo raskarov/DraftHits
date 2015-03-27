@@ -32,7 +32,7 @@ namespace DraftHits.Data
             modelBuilder.Configurations.Add(new ApplicationUserConfig());
             modelBuilder.Configurations.Add(new CustomerConfig());
             modelBuilder.Configurations.Add(new CustomerTransactionConfig());
-
+            modelBuilder.Configurations.Add(new CustomerPaymentsLogConfig());
         }
     }
 }

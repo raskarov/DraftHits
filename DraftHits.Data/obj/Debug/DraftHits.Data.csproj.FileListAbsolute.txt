@@ -35,3 +35,4 @@ C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\obj\Debug\Dra
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\obj\Debug\DraftHits.Data.csproj.GenerateResource.Cache
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
 C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\rassu_000\Desktop\Проекты\DraftHits\DraftHits.Data\obj\Debug\DraftHits.Data.Migrations._27_03_2015_00.resources

@@ -16,6 +16,7 @@ namespace DraftHits.Data
 
             container.RegisterType<ICustomerRepo, CustomerRepo>();
             container.RegisterType<ICustomerTransactionRepo, CustomerTransactionRepo>();
+            container.RegisterType<ICustomerPaymentsLogRepo, CustomerPaymentsLogRepo>();
                         
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<DraftHitsContext, Configuration>());
 
